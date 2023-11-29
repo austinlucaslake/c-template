@@ -1,2 +1,2 @@
-# cpp_template
-Template respository for C++ projects
+# c-template
+Template respository for C/C++ projects
