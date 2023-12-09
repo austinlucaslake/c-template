@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.15.0 FATAL_ERROR)
+project(c-template)
 
 find_package(${META_PROJECT_NAME} REQUIRED HINTS "${CMAKE_CURRENT_SOURCE_DIR}/../../../")
 
@@ -40,9 +41,28 @@ target_compile_definitions(${target}
 )
 
 
+set(DEFULAT_COMPILE_OPTIONS
+    -Wall -Wextra -Wpedantic
+)
 target_compile_options(${target}
     PRIVATE
     ${DEFAULT_COMPILE_OPTIONS}
+)
+
+set(DEBUG_COMPILE_OPTIONS
+    -O0 -Werror
+)
+target_compile_options(${target}
+    PRIVATE
+    "$<$<CONFIG:DEBUG>:${DEBUG_COMPILE_OPTIONS}>"
+)
+
+set(DEBUG_COMPILE_OPTIONS
+    -O3
+)
+target_compile_options(${target}
+    PRIVATE
+    "$<$<CONFIG:RELEASE>:${RELEASE_COMPILE_OPTIONS}>"
 )
 
 target_link_libraries(${target}
