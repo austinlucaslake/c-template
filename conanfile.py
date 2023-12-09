@@ -27,7 +27,7 @@ class CompressorRecipe(ConanFile):
         cmake = CMake(self)
         cmake.configure()
         cmake.build()
-        # cmake.test()
+        cmake.test()
 
     def layout(self):
         cmake_layout(self, src_folder="src", build_folder="build")
