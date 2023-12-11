@@ -4,7 +4,7 @@ class CompressorRecipe(ConanFile):
     name = "c-template"
     version = "0.1.0"
     license = "Apache-2.0"
-    author = "Austin Lake (53884490+austinlucaslake@users.noreply.github.com)"
+    author = "Austin Lucas Lake (53884490+austinlucaslake@users.noreply.github.com)"
     url = "https://github.com/austinlucaslake/c-template"
     description = "Template repository for C/C++ projects."
     topics = ("quaternion", "render", "ASCII")
