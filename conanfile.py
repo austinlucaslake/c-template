@@ -3,8 +3,8 @@ from conan import ConanFile
 class CompressorRecipe(ConanFile):
     name = "c-template"
     version = "0.1.0"
-    license = "Apache-2.0"
-    author = "Austin Lucas Lake (53884490+austinlucaslake@users.noreply.github.com)"
+    license = "MIT"
+    author = "Austin Lucas Lake <git@austinlucaslake.com>"
     url = "https://github.com/austinlucaslake/c-template"
     description = "Template repository for C/C++ projects."
     topics = ("quaternion", "render", "ASCII")

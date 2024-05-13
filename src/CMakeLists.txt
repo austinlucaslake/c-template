@@ -1,7 +1,3 @@
-# Apache-2.0 License 
-# Copyright (c) 2023 Austin Lucas Lake <53884490+austinlucaslake@users.noreply.github.com>
-#
-# Main CMake Project file
 cmake_minimum_required(VERSION 3.23.5 FATAL_ERROR)
 project(c-template)
 
